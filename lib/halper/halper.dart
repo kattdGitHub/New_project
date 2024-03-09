@@ -112,11 +112,11 @@ TextFormField TextFieldCustom({
   return TextFormField(
     controller: controller,
     decoration: InputDecoration(
-      suffixIcon:   suffixIcon,
+      suffixIcon: suffixIcon,
       prefixIcon: prefixIcon,
       hintText: hintText,
       border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(borderRadius ?? 20.r),
+        borderRadius: BorderRadius.circular(borderRadius ?? 12.r),
         borderSide: BorderSide(
           color: borderColor,
         ),

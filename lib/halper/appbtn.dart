@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -30,7 +31,8 @@ class AppBtn extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SizedBox(
+        Container(
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(25)),
           height: height.h,
           width: AppConfig.width * width,
           child: ElevatedButton(
@@ -40,8 +42,9 @@ class AppBtn extends StatelessWidget {
                   Size(AppConfig.width * width, height.h)),
               minimumSize: MaterialStateProperty.all(
                   Size(AppConfig.width * width, height.h)),
-              backgroundColor:
-                  MaterialStateProperty.all(color ?? AppColors.primaryColor),
+              backgroundColor: MaterialStateProperty.all(
+                color ?? AppColors.primaryColor,
+              ),
             ),
             child: !isLoading
                 ? Padding(
