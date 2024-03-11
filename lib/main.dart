@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:new_projact/halper/Appconfig.dart';
+import 'package:new_projact/screen%20/dashboard/dashboard.dart';
 import 'package:new_projact/screen%20/logscreen.dart';
 import 'package:new_projact/screen%20/phoneNumbwr.dart';
 import 'package:new_projact/screen%20/phoneVerify.dart';
@@ -99,7 +100,7 @@ class MyApp extends StatelessWidget {
           ),
           primaryColor: Color(0xff3D5CFF),
         ),
-        home: const PhoneVerify(),
+        home: const Dashboard(),
       ),
     );
   }

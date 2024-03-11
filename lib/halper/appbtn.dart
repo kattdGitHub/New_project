@@ -11,6 +11,7 @@ class AppBtn extends StatelessWidget {
   final String title;
   final double height;
   final Color? color;
+  /// 0.1 to 1
   final double width;
   final TextStyle? style;
   final bool isLoading; // Added loading variable
@@ -19,7 +20,7 @@ class AppBtn extends StatelessWidget {
     Key? key,
     this.onPressed,
     required this.title,
-    this.width = 0.7,
+    this.width = 0.5,
     this.height = 50,
     this.color,
     this.isLoading = false,

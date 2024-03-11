@@ -104,8 +104,10 @@ void _phonedialog(BuildContext context) {
     builder: (BuildContext context) {
       var width = 200.0;
       var height = 50.0;
-      return AlertDialog(
-        actions: [
+      return Dialog(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+        children: [
           hSize(20),
           Center(
             child: Column(
@@ -127,15 +129,14 @@ void _phonedialog(BuildContext context) {
                     fontWeight: FontWeight.w500,
                     fontSize: 16.sp,
                   ),
-                ).paddingOnly(top: 20, bottom: 10),
+                ).paddingOnly(top: 20.h, bottom: 10.h),
                 Text(
-                  '''Congratulations, you have 
-completed your registration!''',
+                  'Congratulations, you have completed your registration!',
                   style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 12.sp,
                   ),
-                ).paddingOnly(bottom: 10),
+                ).paddingOnly(bottom: 10.h),
                 ElevatedButton(
                   style: ButtonStyle(
                     maximumSize:
@@ -162,6 +163,7 @@ completed your registration!''',
             ),
           )
         ],
+      )
       );
     },
   );
