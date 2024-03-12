@@ -2,6 +2,7 @@
 class Assets {
   Assets._();
 
+  static const String assetsAvatar = 'assets/Avatar.png';
   static const String assetsGooglePhoto = 'assets/GooglePhoto.jpg';
   static const String assetsPhoneNumberLOG = 'assets/PhoneNumberLOG.png';
   static const String splaasScreenImageOnboarding1 = 'assets/splaasScreenImage/onboarding1.jpg';
