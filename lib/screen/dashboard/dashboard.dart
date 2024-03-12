@@ -83,7 +83,10 @@ class Dashboard extends StatelessWidget {
                       color: Colors.black,
                       blurRadius: 3.0,
                       spreadRadius: 2.0,
-                      offset: Offset(0, 3,))
+                      offset: Offset(
+                        0,
+                        3,
+                      ))
                 ],
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20),
@@ -138,7 +141,8 @@ class Dashboard extends StatelessWidget {
                     ),
                     Image(
                       image: AssetImage(
-                          "assets/splaasScreenImage/Rectangle 30.png"),
+                        "assets/splaasScreenImage/Rectangle 30.png",
+                      ),
                     )
                   ],
                 ).paddingSymmetric(
